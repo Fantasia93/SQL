@@ -1,0 +1,22 @@
+Create a store database 
+
+
+CREATE table store (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, quantity INTEGER, rating  INTEGER );
+
+INSERT INTO store values (1, "Ringpop",0.25,50,4.2);
+INSERT INTO store values (2, "Snickers",0.75,35,4.0);
+INSERT INTO store values (3, "Skittles", 0.50,50,4.1);
+INSERT INTO store values (4, "Almond Joy", 0.62, 30, 3.2);
+INSERT INTO store values (5, "Crunch", 0.50, 25, 2.3);
+INSERT INTO store values (6, "Baby Ruth", 0.63, 25, 3.1);
+INSERT INTO store values (7, "Turtles", 0.74, 35, 2.5);
+INSERT INTO store values (8, "KitKat", 0.60,50,4.5);
+INSERT INTO store values (9, "Butterfinger", 0.80, 60, 4.0);
+INSERT INTO store values (10, "Dots", 0.25,29,3.2);
+INSERT INTO store values (11, "Nerds," 0.35,41, 4.0);
+INSERT INTO store values (12, "Twizzlers", 0.50,50,4.5);
+INSERT INTO store values (13, "Sourpatch", 0.45,32, 3.9);
+INSERT INTO store values (14, "Airheads", 0.50, 35, 4.0);
+INSERT INTO store values (15, "Twix", 0.43,27, 2.9);
+
+SELECT * FROM store WHERE price > 0 ORDER BY rating 
